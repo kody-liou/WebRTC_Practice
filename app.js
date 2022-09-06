@@ -18,5 +18,5 @@ io.on("connection", onConnection);
 app.use(express.static(path.join(__dirname, 'public'))); // load static resource
 
 server.listen(port, () => {
-  console.log('Server listening at port %d', port);
+  console.log(`Server listening at http://localhost:${port}`);
 });
